@@ -7,6 +7,8 @@ export type { ERC20 } from "./ERC20";
 export type { IERC20Metadata } from "./IERC20Metadata";
 export type { IERC20 } from "./IERC20";
 export type { DappToken } from "./DappToken";
+export type { ExampleExternalContract } from "./ExampleExternalContract";
+export type { Staker } from "./Staker";
 export type { Staking } from "./Staking";
 
 export { AggregatorV3Interface__factory } from "./factories/AggregatorV3Interface__factory";
@@ -15,4 +17,6 @@ export { ERC20__factory } from "./factories/ERC20__factory";
 export { IERC20Metadata__factory } from "./factories/IERC20Metadata__factory";
 export { IERC20__factory } from "./factories/IERC20__factory";
 export { DappToken__factory } from "./factories/DappToken__factory";
+export { ExampleExternalContract__factory } from "./factories/ExampleExternalContract__factory";
+export { Staker__factory } from "./factories/Staker__factory";
 export { Staking__factory } from "./factories/Staking__factory";

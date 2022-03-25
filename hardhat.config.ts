@@ -28,10 +28,10 @@ const config: HardhatUserConfig = {
     deployer: 0,
     tokenOwner: 1,
   },
-  gasReporter: {
-    enabled: process.env.REPORT_GAS !== undefined,
-    currency: "USD",
-  },
+  // gasReporter: {
+  //   enabled: process.env.REPORT_GAS !== undefined,
+  //   currency: "USD",
+  // },
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },

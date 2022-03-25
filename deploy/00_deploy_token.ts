@@ -8,12 +8,14 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   const { deployer, tokenOwner } = await getNamedAccounts();
 
+  // deploy token contract
   const dappToken = await deploy("DappToken", {
     from: deployer,
     args: [tokenOwner],
     log: true,
   });
 
+  // get token contract instance
   const Token = await ethers.getContractFactory("DappToken");
   const accounts = await hre.ethers.getSigners();
   const signer = accounts[0];

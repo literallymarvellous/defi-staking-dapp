@@ -29,6 +29,7 @@ contract Staking is Ownable, ReentrancyGuard {
     }
 
     function setPriceFeed(ERC20 _token, address _pricefeed) internal onlyOwner {
+        require(allowedTokens[_token], "token not allowed");
         tokenPricefeed[_token] = _pricefeed;
     }
 
